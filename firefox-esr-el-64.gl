@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $EUID -ne 0 ]]; then
-   echo "You must be root to run this script." 1>&2
+   echo "Πρέπει να τρέξετε το script ως διαχειριστής." 1>&2
    exit 100
 fi
 wget -r --no-parent -A 'firefox-*.*.*esr.tar.bz2'  http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/linux-x86_64/el/ -P /tmp/
