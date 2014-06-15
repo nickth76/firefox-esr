@@ -17,8 +17,10 @@ Firefox-ESR
 
 **Παράδειγμα:**
 
+```
 cd Downloads
 chmod 755 firefox-esr-el-32.gl
 sudo ./firefox-esr-el-32.gl
+```
 
 
