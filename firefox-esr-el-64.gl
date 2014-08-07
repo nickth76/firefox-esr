@@ -3,9 +3,9 @@ if [[ $EUID -ne 0 ]]; then
    echo "Πρέπει να τρέξετε το script ως διαχειριστής." 1>&2
    exit 100
 fi
-wget -r --no-parent -A 'firefox-*.*.*esr.tar.bz2'  http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/linux-x86_64/el/ -P /tmp/
+wget -r --no-parent -A 'firefox-*.*.*esr.tar.bz2'  http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-24.0esr/linux-x86_64/el/ -P /tmp/
 sleep 1
-tar xjf /tmp/ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-esr/linux-x86_64/el/firefox-*.*.*esr.tar.bz2 -C /opt/
+tar xjf /tmp/ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-24.0esr/linux-x86_64/el/firefox-*.*.*esr.tar.bz2 -C /opt/
 wget https://www.dropbox.com/s/znn0ekxbpebj3u2/firefox-esr-icon.png -O /opt/firefox/icons/firefox-esr-icon.png 
 wget https://www.dropbox.com/s/0bpbe3wsruixmlx/firefox-esr.desktop -O /usr/share/applications/firefox-esr.desktop 
 sleep 2
