@@ -3,9 +3,9 @@ if [[ $EUID -ne 0 ]]; then
    echo "You must be root to run this script." 1>&2
    exit 100
 fi
-wget -r --no-parent -A 'firefox-*.*.*esr.tar.bz2'  http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-24.0esr/linux-i686/en-US/ -P /tmp/
+wget -r --no-parent -A 'firefox-*.*.*esr.tar.bz2'  http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-31.0esr/linux-i686/en-US/ -P /tmp/
 sleep 1
-tar xjf /tmp/ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-24.0esr/linux-i686/en-US/firefox-*.*.*esr.tar.bz2 -C /opt/
+tar xjf /tmp/ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-31.0esr/linux-i686/en-US/firefox-*.*.*esr.tar.bz2 -C /opt/
 wget https://www.dropbox.com/s/znn0ekxbpebj3u2/firefox-esr-icon.png -O /opt/firefox/icons/firefox-esr-icon.png 
 wget https://www.dropbox.com/s/0bpbe3wsruixmlx/firefox-esr.desktop -O /usr/share/applications/firefox-esr.desktop 
 sleep 2
