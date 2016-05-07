@@ -3,7 +3,7 @@ if [[ $EUID -ne 0 ]]; then
    echo "Πρέπει να τρέξετε το script ως διαχειριστής." 1>&2
    exit 100
 fi
-wget -O/tmp/firefox-el64.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest&os=linux64&lang=el"
+wget -O /tmp/firefox-el64.tar.bz2 "https://download.mozilla.org/?product=firefox-esr-latest&os=linux64&lang=el"
 sleep 1
 tar xjf /tmp/firefox-el64.tar.bz2 -C /opt/
 wget https://www.dropbox.com/s/znn0ekxbpebj3u2/firefox-esr-icon.png -O /opt/firefox/icons/firefox-esr-icon.png 
